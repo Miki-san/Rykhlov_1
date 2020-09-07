@@ -46,13 +46,13 @@ public class Rykhlov_01 {
 
         n = in.nextInt();
         int[] arr2 = new int[n];
-        for (int j = 0; j < 10;  j++){
+        for (int j = 0; j < n;  j++){
             arr2[j] = (int)(Math.random()*100);
             System.out.print(arr2[j] + " ");
         }
         System.out.println();
         Arrays.sort(arr2);
-        for(int j = 0; j < 10; j++){
+        for(int j = 0; j < n; j++){
             System.out.print(arr2[j] + " ");
         }
         System.out.println();
@@ -60,13 +60,13 @@ public class Rykhlov_01 {
         Random r = new Random();
         n = in.nextInt();
         int[] arr3 = new int[n];
-        for (int j = 0; j < 10;  j++){
+        for (int j = 0; j < n;  j++){
             arr3[j] = r.nextInt();
             System.out.print(arr3[j] + " ");
         }
         System.out.println();
         Arrays.sort(arr3);
-        for(int j = 0; j < 10; j++){
+        for(int j = 0; j < n; j++){
             System.out.print(arr3[j] + " ");
         }
         System.out.println();
