@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Rykhlov_01 {
-    public static void main(){
+    public static void main(String[] arg){
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int sum1 = 0, sum2 = 0, sum3 = 0;
@@ -21,10 +21,21 @@ public class Rykhlov_01 {
         do{
             sum3 += arr[i];
             i++;
-        }while(i == n);
-        System.out.printf(sum1 + "\n" + sum2 + "\n" + sum3);
+        }while(i != n);
+        System.out.println(sum1 + "\n" + sum2 + "\n" + sum3);
 
+        for (int j = 0; j < arg.length; j++){
+            System.out.println(arg[j]);
+        }
+        System.out.print(1);
+        for (double j = 2; j <= 10;  j++){
+            System.out.print(" " + 1/j);
+        }
+        n = in.nextInt();
+        int[] arr2 = new int[n];
 
+        n = in.nextInt();
+        int[] arr3 = new int[n];
 
         in.close();
     }
