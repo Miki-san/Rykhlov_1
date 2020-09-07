@@ -1,6 +1,16 @@
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Rykhlov_01 {
+    public static int getFactorial(int f) {
+        int result = 1;
+        for (int j = 1; j <= f; j++) {
+            result = result * j;
+        }
+        return result;
+    }
+
     public static void main(String[] arg){
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -27,16 +37,40 @@ public class Rykhlov_01 {
         for (int j = 0; j < arg.length; j++){
             System.out.println(arg[j]);
         }
+
         System.out.print(1);
         for (double j = 2; j <= 10;  j++){
             System.out.print(" " + 1/j);
         }
+        System.out.println();
+
         n = in.nextInt();
         int[] arr2 = new int[n];
+        for (int j = 0; j < 10;  j++){
+            arr2[j] = (int)(Math.random()*100);
+            System.out.print(arr2[j] + " ");
+        }
+        System.out.println();
+        Arrays.sort(arr2);
+        for(int j = 0; j < 10; j++){
+            System.out.print(arr2[j] + " ");
+        }
+        System.out.println();
 
+        Random r = new Random();
         n = in.nextInt();
         int[] arr3 = new int[n];
-
+        for (int j = 0; j < 10;  j++){
+            arr3[j] = r.nextInt();
+            System.out.print(arr3[j] + " ");
+        }
+        System.out.println();
+        Arrays.sort(arr3);
+        for(int j = 0; j < 10; j++){
+            System.out.print(arr3[j] + " ");
+        }
+        System.out.println();
+        System.out.println(getFactorial(4));
         in.close();
     }
 }
